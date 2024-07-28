@@ -212,6 +212,21 @@ h1 {
 
 .notif-bar {
 	grid-area: notif;
+	place-self: center;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	gap: 2rem;
+}
+
+.notif-bar .propic {
+	max-width: 4rem;
+	max-height: 4rem;
+}
+
+.notif-bar a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .menu {
