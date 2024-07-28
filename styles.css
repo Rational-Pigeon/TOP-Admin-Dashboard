@@ -1,0 +1,206 @@
+@import "./modern-normalize.css";
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+img {
+	display: block;
+	max-inline-size: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+.icon {
+	height: 1.7em;
+	width: auto;
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: 1.5fr 5fr 1.5fr;
+	grid-template-rows: 2fr 1fr 8fr;
+	grid-template-areas:
+		"sidebar header header"
+		"sidebar titles titles"
+		"sidebar cards rightbar";
+	min-height: 100vh;
+}
+
+.propic {
+	width: 4em;
+	height: auto;
+	border-radius: 50%;
+}
+
+.propicL {
+	width: 6em;
+	height: auto;
+	border-radius: 50%;
+}
+
+.logo {
+	width: 4em;
+	height: auto;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	background-color: #1992d4;
+	display: flex;
+	flex-flow: nowrap column;
+	gap: 1.4em;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.header {
+	grid-area: header;
+}
+
+.titles {
+	grid-area: titles;
+}
+
+.card-container {
+	grid-area: cards;
+}
+
+
+.right-bar {
+	grid-area: rightbar;
+}
+
+.titles,
+.card-container,
+.right-bar {
+	background-color: #e2e8f0;
+}
+
+.sidebar div {
+	display: flex;
+	align-items: center;
+	padding-left: 2.1rem;
+	gap: 0.5em;
+}
+
+.logo-container {
+	margin-bottom: 1em;
+}
+
+.settings {
+	margin-top: 2em;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: white;
+}
+
+.sidebar a:hover {
+	text-decoration: underline;
+}
+
+.logo-container a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+
+.header {
+	display: grid;
+	grid-template: 1fr 1fr / 1.5fr 1fr;
+	grid-template-areas:
+		"search notif"
+		"greet menu";
+}
+
+.header div {
+	display: flex;
+}
+
+.search {
+	grid-area: search;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.search input {
+	width: 80%;
+	background-color: #e2e8f0;
+	border-radius: 16px;
+	border: none;
+	height: 2rem;
+}
+
+.submit {
+	background-color: transparent;
+	border: none;
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: #e2e8f0;
+}
+
+.search input:focus {
+	outline: solid #1992d4 2px;
+}
+
+.greet-container {
+	grid-area: greet;
+}
+
+
+.notif-bar {
+	grid-area: notif;
+}
+
+.menu {
+	grid-area: menu;
+}
