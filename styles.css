@@ -66,13 +66,13 @@ h6 {
 
 .propic {
 	width: 4em;
-	height: auto;
+	height: 4em;
 	border-radius: 50%;
 }
 
 .propicL {
-	width: 6em;
-	height: auto;
+	width: 5em;
+	height: 5em;
 	border-radius: 50%;
 }
 
@@ -203,8 +203,12 @@ h1 {
 .greet {
 	flex-flow: nowrap column;
 	justify-content: center;
+	font-weight: bold;
 }
 
+.username {
+	font-size: 1.4rem;
+}
 
 .notif-bar {
 	grid-area: notif;
