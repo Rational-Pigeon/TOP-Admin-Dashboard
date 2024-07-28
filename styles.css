@@ -59,7 +59,7 @@ h6 {
 	grid-template-rows: 2fr 1fr 8fr;
 	grid-template-areas:
 		"sidebar header header"
-		"sidebar titles titles"
+		"sidebar projects announcements"
 		"sidebar cards rightbar";
 	min-height: 100vh;
 }
@@ -96,8 +96,17 @@ h6 {
 	grid-area: header;
 }
 
-.titles {
-	grid-area: titles;
+.projects-title {
+	grid-area: projects;
+}
+
+.projects-title,
+.announcements-title {
+	background-color: #e2e8f0;
+}
+
+.announcements-title {
+	grid-area: announcements;
 }
 
 .card-container {
@@ -231,4 +240,30 @@ h1 {
 
 .menu {
 	grid-area: menu;
+	display: flex;
+	place-self: center;
+	list-style: none;
+	gap: 3rem;
+}
+
+.menu li {
+	flex: 1;
+	background-color: #1992d4;
+	padding: 0.5rem 2rem;
+	border-radius: 20px;
+}
+
+.menu li:hover {
+	background-color: #1b72a2;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.1rem;
+	padding: 2rem 0.7rem;
 }
