@@ -320,3 +320,39 @@ h2 {
 	padding: 1rem;
 	gap: 1rem;
 }
+
+
+.right-bar {
+	display: grid;
+	grid-template-rows: 5fr 1fr 5fr;
+}
+
+.announcements-container {
+	display: flex;
+	flex-flow: nowrap column;
+	background-color: white;
+	margin-top: 1rem;
+	border-radius: 8px;
+	padding: 1.8rem;
+}
+
+.announcement {
+	display: flex;
+	flex-flow: nowrap column;
+	padding: 0.5rem;
+}
+
+.announcement h4 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.announcement p {
+	font-size: 0.8rem;
+	color: #636363;
+	margin-bottom: 0.7rem;
+}
+
+hr {
+	width: 100%;
+}
